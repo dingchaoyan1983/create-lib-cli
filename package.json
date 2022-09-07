@@ -1,0 +1,37 @@
+{
+  "name": "dcli",
+  "version": "1.0.0",
+  "description": "dingchao's cli can init a lib template",
+  "keywords": [],
+  "author": "dingchao<270422767@qq.com>",
+  "homepage": "https://juejin.cn/user/2313028194272039?utm_source=gold_browser_extension",
+  "license": "ISC",
+  "main": "./bin/cli.js",
+  "bin": {
+    "dcli": "./bin/cli.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "bin",
+    "template"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.18.6",
+    "@malept/cross-spawn-promise": "^2.0.0",
+    "chalk": "^2.4.1",
+    "commander": "^9.4.0",
+    "cross-spawn": "^7.0.3",
+    "fs-extra": "^10.1.0",
+    "handlebars": "^4.7.7",
+    "inquirer": "^8.0.0",
+    "ora": "^5.0.0"
+  }
+}
