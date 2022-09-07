@@ -1,12 +1,16 @@
 {
-  "name": "dcli",
-  "version": "1.0.0",
+  "name": "dingchao_cli",
+  "version": "1.0.1",
   "description": "dingchao's cli can init a lib template",
-  "keywords": [],
+  "keywords": ["cli", "create-lib"],
   "author": "dingchao<270422767@qq.com>",
   "homepage": "https://juejin.cn/user/2313028194272039?utm_source=gold_browser_extension",
   "license": "ISC",
   "main": "./bin/cli.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingchaoyan1983/create-lib-cli.git"
+  },
   "bin": {
     "dcli": "./bin/cli.js"
   },
