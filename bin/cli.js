@@ -16,13 +16,13 @@ const defaultNS = '@dingchao';
 const defaultAuthor = 'dingchao';
 
 program
-.name('betalpha')
+.name('dcli')
 .version(package.version)
 // create lib command
 .command('create-lib')
 .argument('<lib name>', '组件库名称')
 .description('创建一个组件库')
-.option('-n --libNS <lib namespace>', 'lib的命名空间, 如果不指定则默认为@betalpha', defaultNS)
+.option('-n --libNS <lib namespace>', `lib的命名空间, 如果不指定则默认为${defaultNS}`, defaultNS)
 .option('-c --createdAt <relative path>', '指定组件库初始化模板的目录, 如果不指定则会创建到monorepo的workspace的默认目录packages下面', defaultCreateAt)
 .action(async(tplName, options) => {
   const currentLibRoot = path.resolve(process.argv[1], '../..');
